@@ -1,0 +1,14 @@
+version: '3.1'
+services:
+  parse-server:
+    image: parseplatform/parse-server:latest
+    ports:
+      - "1337:1337"
+    volumes:
+      - /root/airwise-server/config.json:/parse-server/config/config.json
+      
+    
+    environment:
+      - PARSE_SERVER_APPLICATION_ID=acServerAppId
+      - PARSE_SERVER_MASTER_KEY=acServerMasterKey
+      - PARSE_SERVER_DATABASE_URI=postgres://root:password@postgres:5432/airwise

@@ -1,0 +1,16 @@
+{
+  "appId": "acServerAppId",
+  "masterKey": "acServerMasterKey",
+  "readOnlyMasterKey": "acServerReadOnlyMasterKey",
+  "serverURL": "http://157.173.219.76:1337/parse",
+  "cloud": "./cloud/main.js",
+  "databaseURI": "postgres://root:password@postgres:5432/airwise",
+  "port": 1337, 
+  "auth": {
+    "restAPIKey": "qWd6pgR2kGrPw085h0UvZSOEGwo6PtfFpwRB3djiSIByuhvUHsDChTgX64AKLQP6"
+  },
+  "masterKeyIps": ["0.0.0.0/0"],
+  "startLiveQueryServer": true,
+  "liveQuery": {"classNames":["Role", "Session", "User", "device","history"]},
+  "encodeParseObjectInCloudFunction": true
+}
